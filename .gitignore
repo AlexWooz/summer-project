@@ -76,9 +76,5 @@ crashlytics-build.properties
 Assets/ProBuilder Data.meta
 Assets/Probuilder Data/
 ProjectSettings/SceneTemplateSettings.json
-Packages/packages-lock.json
-ProjectSettings/PackageManagerSettings.asset
-ProjectSettings/Packages/com.unity.probuilder/Settings.json
-ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json
-ProjectSettings/ProjectSettings.asset
+
 

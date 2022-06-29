@@ -6,7 +6,9 @@ public class PlayerMotor : MonoBehaviour
 {
     private CharacterController controller;
     private Vector3 playerVelocity;
+    private float vSpeed = 0;
     public float speed = 5f;
+    public float gravity = 9.8f;
 
     // Start is called before the first frame update
     void Start()
@@ -17,15 +19,20 @@ public class PlayerMotor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (controller.isGrounded) {
+            vSpeed = 0;
+        } else {
+            vSpeed -= gravity * Time.deltaTime;
+        }
     }
 
     // Receives input from InputManager and moves the player accordingly
     public void ProcessMove(Vector2 input)
     {
         Vector3 moveDirection = Vector3.zero;
-        moveDirection.x = input.x;
-        moveDirection.z = input.y;
-        controller.Move(transform.TransformDirection(moveDirection) * speed * Time.deltaTime);
+        moveDirection.x = input.x * speed;
+        moveDirection.y = vSpeed;
+        moveDirection.z = input.y * speed;
+        controller.Move(transform.TransformDirection(moveDirection) * Time.deltaTime);
     }
 }

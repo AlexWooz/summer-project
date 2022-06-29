@@ -7,6 +7,7 @@ Just a coding project we're doing during the summer.
 
 ## Setup
 <p>Install the latest LTS version of Unity (2021.3.5f1 as of editing this) and clone this repository.</p>
+<p>Optional: If you want your issues to transition automatically when creating a branch or making a pull request, you'll need to install GitHub for Jira and link your accounts: https://marketplace.atlassian.com/apps/1219592/github-for-jira?hosting=cloud&tab=overview</p>
 
 ## Contributors
 <ul>

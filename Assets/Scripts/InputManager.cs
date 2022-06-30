@@ -20,7 +20,7 @@ public class InputManager : MonoBehaviour
         look = GetComponent<PlayerLook>();
     }
 
-    void FixedUpdate()
+    void Update()
     {
         motor.ProcessMove(onFoot.Movement.ReadValue<Vector2>());
     }

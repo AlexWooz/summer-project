@@ -30,7 +30,7 @@ public class PlayerMotor : MonoBehaviour
         moveDirection.x = input.x;
         moveDirection.z = input.y;
         controller.Move(transform.TransformDirection(moveDirection) * speed * Time.deltaTime);
-        playerVelocity.y += -9.8f * Time.deltaTime;
+        playerVelocity.y += -gravity * Time.deltaTime;
         if (isGrounded && playerVelocity.y < 0) 
             playerVelocity.y = -2f;
         controller.Move(playerVelocity * Time.deltaTime);

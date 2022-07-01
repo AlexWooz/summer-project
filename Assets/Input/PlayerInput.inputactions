@@ -24,6 +24,15 @@
                     "initialStateCheck": true
                 },
                 {
+                    "name": "Switch Perspective",
+                    "type": "Button",
+                    "id": "b1935857-5bd5-4962-890d-0ebf52b60fd9",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
                     "name": "Jump",
                     "type": "Button",
                     "id": "97938ad6-e12b-49ac-baf2-5fbb24acf822",
@@ -128,6 +137,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Sprint",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "69d1df4e-39c8-4c92-a25e-43887b51c20b",
+                    "path": "<Keyboard>/v",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Switch Perspective",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

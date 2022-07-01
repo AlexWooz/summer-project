@@ -24,7 +24,6 @@ public class InputManager : MonoBehaviour
     void Update()
     {
         motor.ProcessMove(onFoot.Movement.ReadValue<Vector2>());
-        
     }
 
     void LateUpdate()

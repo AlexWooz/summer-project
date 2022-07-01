@@ -8,6 +8,7 @@ public class PlayerMotor : MonoBehaviour
     private Vector3 playerVelocity;
     private bool isGrounded;
     public float speed = 5f;
+    public float sprintMult = 2f;
     public float gravity = 9.8f;
     public float jumpHeight = 1f;
 
@@ -46,7 +47,7 @@ public class PlayerMotor : MonoBehaviour
 
     public void Sprint()
     {
-        speed *= 2f;
+        speed *= sprintMult;
     }
 
     public void StopSprint()

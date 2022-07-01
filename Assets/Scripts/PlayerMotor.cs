@@ -52,7 +52,7 @@ public class PlayerMotor : MonoBehaviour
 
     public void StopSprint()
     {
-        speed *= 1f;
+        speed /= sprintMult;
     }
 
 }

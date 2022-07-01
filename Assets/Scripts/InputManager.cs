@@ -22,12 +22,12 @@ public class InputManager : MonoBehaviour
         onFoot.Jump.performed += OnPlayerJump => motor.Jump();
         onFoot.Sprint.performed += OnPlayerSprint => motor.Sprint();
         onFoot.Sprint.canceled += OnPlayerSprintCanceled => motor.StopSprint();
+        onFoot.SwitchPerspective.performed += OnCameraSwitch => look.SwitchCamera();
     }
 
     void Update()
     {
         motor.ProcessMove(onFoot.Movement.ReadValue<Vector2>());
-        
     }
 
     void LateUpdate()

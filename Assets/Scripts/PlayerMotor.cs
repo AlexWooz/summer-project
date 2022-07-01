@@ -44,4 +44,14 @@ public class PlayerMotor : MonoBehaviour
         }
     }
 
+    public void Sprint()
+    {
+        speed = 10f;
+    }
+
+    public void StopSprint()
+    {
+        speed = 5f;
+    }
+
 }

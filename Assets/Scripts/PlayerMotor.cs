@@ -46,12 +46,12 @@ public class PlayerMotor : MonoBehaviour
 
     public void Sprint()
     {
-        speed = 10f;
+        speed *= 2f;
     }
 
     public void StopSprint()
     {
-        speed = 5f;
+        speed *= 1f;
     }
 
 }

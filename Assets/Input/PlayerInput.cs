@@ -155,7 +155,7 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                     ""name"": """",
                     ""id"": ""4b9adc94-d9f5-462f-ba63-cf0897e1f232"",
                     ""path"": ""<Keyboard>/leftShift"",
-                    ""interactions"": ""Hold(duration=0.1)"",
+                    ""interactions"": ""Hold(duration=0.001)"",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Sprint"",
